@@ -29,10 +29,10 @@ class InteractiveRecord
     self.class.table_name
   end
   
-  def col_names_for_insert
-    cols = self.class.column_names.delete_if {|col| col == "id"}
-    cols.join(",")
-  end
+ # def col_names_for_insert
+ #   cols = self.class.column_names.delete_if {|col| col == "id"}
+ #    cols.join(",")
+ #end
   
   def values_for_insert
       values = []
